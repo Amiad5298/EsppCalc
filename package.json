@@ -1,5 +1,5 @@
 {
-  "name": "esppcalc",
+  "name": "ESPPCALCULATOR",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,9 +9,9 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
     "eject": "react-scripts eject"
   },
   "browserslist": {
