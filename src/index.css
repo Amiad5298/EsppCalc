@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  direction: rtl;
+}
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+  text-align: center;
+  font-size: 2em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.explanation {
+  background-color: #e9f7ef;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.calculator {
+  background-color: #d5e8d4;
+  padding: 20px;
+  border-radius: 5px;
+}
+h2 {
+  color: #333333;
+}
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+#result {
+  font-weight: bold;
+  color: #333333;
+}
+input[type="date"] {
+  direction: ltr;
+  text-align: right;
+}
+.warning {
+  border: 2px solid #ffcccc;
+  background-color: #ffe6e6;
+}
+.warning-message {
+  color: #cc0000;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+@keyframes fadeInOut {
+  10% { opacity: 1; }
+  0% { opacity: 0; }
+  100% { opacity: 0; }
+  90% { opacity: 1; }
+}
+.warning-message {
+  animation: fadeInOut 5s forwards;
+}
+.invalid {
+  border: 2px solid red;
+  transition: border-color 0.3s ease-in-out;
+}
